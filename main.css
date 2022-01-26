@@ -9,10 +9,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
-    background-color: #fff;
+    position: fixed;
+    background: none;
+    left: 0;
+    right: 0;
     top: 0;
     z-index: 1;
+    background-color: white;
+    transition: box-shadow, background-color .25s ease;
+  }
+  .header__scrolled {
+   background: none;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
   }
     
   .header__logo {
@@ -27,6 +35,7 @@ body {
     font-weight: 600;
     margin-right: 25px;
   }
+
   button {
     font-family: 'Raleway', sans—serif;
     font-size: 15px;
@@ -58,7 +67,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 115px;
+    padding-top: 200px;
     padding-bottom: 115px;
     background: url('img/back.png') no-repeat;
     background-position: center;
